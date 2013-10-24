@@ -1,0 +1,21 @@
+{
+    "name": "devdns",
+    "description": "dns server for .dev domains",
+    "author": "Koen Punt",
+    "version": "0.0.1",
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/koenpunt/devdns.git"
+    },
+    "main": "./lib/index.js",
+    "dependencies": {
+        "dnsserver.js": "https://github.com/koenpunt/dnsserver.js/tarball/4f2c713"
+    },
+    "devDependencies": {
+        "nodeunit": ">=0.5.0"
+    },
+    "engines": {
+        "node": "~>0.6"
+    }
+}

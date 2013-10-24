@@ -1,0 +1,19 @@
+#!/usr/bin/env node
+
+var devdns = require('..');
+var argv = process.argv;
+
+if (argv.length < 3) {
+  console.error("usage: devdns <target> [port] [address]");
+  process.exit(1);
+}
+
+
+console.log()
+
+var target = argv[2];
+var port = argv[3] || 5300;
+var address = argv[4] || "127.0.0.1";
+var server = (new devdns).createServer(target, port, address);
+
+console.log("devdns listening on port %s: address =%s target =%s", port, address, target);
